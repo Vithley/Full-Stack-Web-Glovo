@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+/*Estilos de Nav*/
 nav{
     background: #2f64d6;
     height: 80px;
@@ -66,12 +67,187 @@ li a.active, li a:hover{
     transition: .5s;
 }
 
+
+/*Estilos de section*/
+
 section {
-    background: url(../img/house.jpeg);
-    background-size: cover;
-    background-position: center center;
-    height: calc(100vh - 80px);
+    position: relative;
+    
 }
+
+section img{
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+
+.text-portfolio{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color:#fff;
+    background-color: coral;
+    
+}
+
+/*Descripción*/
+
+.description h2{
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px 30px;
+
+}
+
+.description p{
+    font-size: 32px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 50px 20px ;
+    text-align: justify;
+}
+
+/*Skills*/
+body { background: #E9E5E2 ; }
+
+#skill { 
+	list-style: none;
+	font: 26px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	width: 400px;
+	position: relative;
+	line-height: 2em;
+	padding: 50px 0;
+}
+
+#skill li { 
+	margin-bottom:80px; 
+	background:#e9e5e2;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#e1ddd9), to(#e9e5e2));
+	background-image: -webkit-linear-gradient(top, #e1ddd9, #e9e5e2);
+	background-image: -moz-linear-gradient(top, #e1ddd9, #e9e5e2);
+	background-image: -ms-linear-gradient(top, #e1ddd9, #e9e5e2);
+	background-image: -o-linear-gradient(top, #e1ddd9, #e9e5e2);
+	background-image: linear-gradient(top, #e1ddd9, #e9e5e2);  
+	height:20px; 
+	border-radius:10px; 
+	-moz-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;	 
+	-webkit-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;	 
+	box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;	  
+}
+
+#skill li h3 { 
+	position:relative; 
+	top:-55px;
+}
+
+.bar { 
+	height:18px; 
+	  
+	position:absolute;
+	border-radius:10px;
+	-moz-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+	-webkit-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;	 
+	box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;		
+}
+
+.timidez {
+	width:10%; 
+	animation:timidez 2s ease-out;
+	-webkit-animation:timidez 2s ease-out;
+	background-color: #f674a4;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f674a4), to(#e06995));
+	background-image: -webkit-linear-gradient(top, #f674a4, #e06995);
+	background-image: -moz-linear-gradient(top, #f674a4, #e06995);
+	background-image: -ms-linear-gradient(top, #f674a4, #e06995);
+	background-image: -o-linear-gradient(top, #f674a4, #e06995);
+	background-image: linear-gradient(top, #f674a4, #e06995);
+}
+
+.torpeza {
+	width:90%;
+	animation:torpeza 2s ease-out;
+	-webkit-animation:torpeza 2s ease-out;
+	background-color: #f0bb4b;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f0bb4b), to(#d9aa44));
+	background-image: -webkit-linear-gradient(top, #f0bb4b, #d9aa44);
+	background-image: -moz-linear-gradient(top, #f0bb4b, #d9aa44);
+	background-image: -ms-linear-gradient(top, #f0bb4b, #d9aa44);
+	background-image: -o-linear-gradient(top, #f0bb4b, #d9aa44);
+	background-image: linear-gradient(top, #f0bb4b, #d9aa44);
+}
+
+.amigable {
+	width:75%;
+	animation:amigable 2s ease-out;
+	-webkit-animation:amigable 2s ease-out;
+	background-color: #a1ce5b;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#a1ce5b), to(#91ba52));
+	background-image: -webkit-linear-gradient(top, #a1ce5b, #91ba52);
+	background-image: -moz-linear-gradient(top, #a1ce5b, #91ba52);
+	background-image: -ms-linear-gradient(top, #a1ce5b, #91ba52);
+	background-image: -o-linear-gradient(top, #a1ce5b, #91ba52);
+	background-image: linear-gradient(top, #a1ce5b, #91ba52);
+}
+
+.cariñoso {
+	width:80%;
+	animation: cariñoso 2s ease-out;
+	-webkit-animation: cariñoso 2s ease-out;
+	background-color: #66b3cc;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#66b3cc), to(#5da3ba));
+	background-image: -webkit-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: -moz-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: -ms-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: -o-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: linear-gradient(top, #66b3cc, #5da3ba)	
+}
+
+.mal_humor {
+	width:80%;
+	animation: mal_humor 2s ease-out;
+	-webkit-animation: mal_humor 2s ease-out;
+	background-color: #66b3cc;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#66b3cc), to(#5da3ba));
+	background-image: -webkit-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: -moz-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: -ms-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: -o-linear-gradient(top, #66b3cc, #5da3ba);
+	background-image: linear-gradient(top, #66b3cc, #5da3ba)	
+}
+
+.familiar {
+	width:70%; 
+	animation:familiar 2s ease-out;
+	-webkit-animation:familiar 2s ease-out;
+	background-color: #f674a4;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f674a4), to(#e06995));
+	background-image: -webkit-linear-gradient(top, #f674a4, #e06995);
+	background-image: -moz-linear-gradient(top, #f674a4, #e06995);
+	background-image: -ms-linear-gradient(top, #f674a4, #e06995);
+	background-image: -o-linear-gradient(top, #f674a4, #e06995);
+	background-image: linear-gradient(top, #f674a4, #e06995);
+}
+
+@keyframes timidez {0%  { width:0px;} 100%{ width:100%;}  }
+@keyframes torpeza         { 0%  { width:0px;} 100%{ width:90%;}  }
+@keyframes amigable      { 0%  { width:0px;} 100%{ width:65%;}  }
+@keyframes cariñoso   { 0%  { width:0px;} 100%{ width:80%;}  }
+@keyframes mal_humor         { 0%  { width:0px;} 100%{ width:90%;}  }
+@keyframes familiar {0%  { width:0px;} 100%{ width:100%;}  }
+
+@-webkit-keyframes timidez       { 0%  { width:0px;} 100%{ width:100%;}  }
+@-webkit-keyframes torpeza       { 0%  { width:0px;} 100%{ width:90%;}  }
+@-webkit-keyframes amigable      { 0%  { width:0px;} 100%{ width:65%;}  }
+@-webkit-keyframes cariñoso   { 0%  { width:0px;} 100%{ width:80%;}  }
+@-moz-keyframes mal_humor         { 0%  { width:0px;} 100%{ width:90%;}  }
+@-webkit-keyframes familiar       { 0%  { width:0px;} 100%{ width:90%;}  }
+
+
+/*Diseño responsive*/
 
 @media (max-width: 952px){
     .icon-enlace {
@@ -79,6 +255,17 @@ section {
     }
     nav ul li a {
         font-size: 16px;
+    }
+
+    .text-portfolio{
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 30px;
+        color:#fff;
+        background-color: coral;
     }
 }
 
@@ -111,5 +298,16 @@ section {
     #check:checked ~ ul{
         left: 0;
     } 
+
+    .text-portfolio{
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        color:#fff;
+        background-color: coral;
+    }
 }
 
