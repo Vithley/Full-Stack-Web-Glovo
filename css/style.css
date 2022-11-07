@@ -1,0 +1,28 @@
+.menu{
+    width: 15em;
+    right: -15em;
+    position: absolute;
+    overflow: hidden;
+    display: block;
+    height: 10000%;
+    background-color: rgb(22, 112, 111);
+   }
+
+   .menu li{
+    display: block;
+   }
+
+/* En escritorio reseteamos el max-height y lo posicionamos relativamente */
+@media only screen and (min-width: 37.5em){
+    .menu{
+     max-height: inherit;
+     position: relative;
+     right: inherit;
+     width: auto; 
+     background: transparent;
+    }
+    
+    .menu li{
+        display: inline-block; 
+    }
+}
