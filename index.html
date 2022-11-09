@@ -9,23 +9,26 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <nav class="menu">
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        <a href="#" class="icon-enlace">
-            <img src="img/Homer-Simpson.jpg" alt="" class="logo">
-            <img src="img/The_Simpsons_yellow_logo.svg" alt="" class="name_logo">
-        </a>
-        
-        <ul>
-            <li><a href="#">Proyectos</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-        
-    </nav>
+    <div class="navbar">
+        <div class="container flex-nav">
+            <div class="nav-header">
+                <a href="#" class="icon-enlace">
+                    <img src="img/Homer-Simpson.jpg" alt="" class="logo">
+                    <img src="img/The_Simpsons_yellow_logo.svg" alt="" class="name_logo">
+                </a>
+                <button class="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li class="nav-link"><a href="#">Proyectos</a></li>
+                    <li class="nav-link"><a href="#">Skills</a></li>
+                    <li class="nav-link"><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div> 
+    </div>   
     <section>
         <img src="img/house.jpeg" alt="">
         <h1 class="text-portfolio">PORTFOLIO HOMER-SIMPSON</h1>
@@ -41,16 +44,42 @@
         </p>
         
     </div>
+
+    <h2>Skills</h2>
+
+
     <div class="skills">
-        <h2>Skills</h2>
-        <ul id="skill">
-            <li><span class="bar timidez"></span><h3>Timidez</h3></li>
-            <li><span class="bar torpeza"></span><h3>Torpeza</h3></li>
-            <li><span class="bar amigable"></span><h3>Amigable</h3></li>
-            <li><span class="bar cariñoso"></span><h3>Cariñoso</h3></li>
-            <li><span class="bar mal_humor"></span><h3>Mal humor</h3></li>
-            <li><span class="bar familiar"></span><h3>Familiar</h3></li>
-        </ul>
+        
+        <p>Timidez</p>
+        <div class="skill-container">
+            <div class="skill timidez">20%</div>
+        </div>
+
+        <p>Torpeza</p>
+        <div class="skill-container">
+            <div class="skill torpeza">80%</div>
+        </div>
+
+        <p>Amigable</p>
+        <div class="skill-container">
+            <div class="skill amigable">60%</div>
+        </div>
+
+        <p>Cariñoso</p>
+        <div class="skill-container">
+            <div class="skill cariñoso">50%</div>
+        </div>
+
+        <p>Mal Humor</p>
+        <div class="skill-container">
+            <div class="skill humor">90%</div>
+        </div>
+
+        <p>Familiar</p>
+        <div class="skill-container">
+            <div class="skill familiar">70%</div>
+        </div>
+
     </div>
 </body>
 </html>
