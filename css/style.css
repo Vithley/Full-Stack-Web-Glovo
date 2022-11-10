@@ -1,13 +1,17 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;max-width: 100%;
+    padding: 0;
+    max-width: 100%;
 }
 
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(103, 138, 169);
     background-color: antiquewhite;
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
 }
 
 .container{
@@ -94,7 +98,7 @@ a{
 /*Descripción*/
 
 h2{
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 20px 30px;
@@ -102,7 +106,7 @@ h2{
 }
 
 .description p{
-    font-size: 32px;
+    font-size: 22px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 50px 20px ;
     text-align: justify;
@@ -113,7 +117,7 @@ h2{
     width: 500px;
     margin: auto;
     padding: 10px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 
@@ -200,11 +204,64 @@ h2{
 /*Form*/
 
 .form-skill {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.contacto form {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.contacto form label {
+    display: block;
+}
+
+.contacto form p {
+    margin: 0;
+}
+
+.title-select{
+    padding-bottom: 20px;
+}
+
+.contacto form button, .contacto form .campos{
+    width: 100%;
+    padding: 1em;
+    
+}
+
+.boton input {
+    color: rgb(220, 208, 39);
+    background-color: blue;
+    border-radius: 20px;
+}
+
+textarea {
+    width: 100%;
+    
+}
+
+/*Footer*/
+
+footer{
+    background-color: blue;
+    padding: 1em 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    
     
 }
 
 
-@media only screen and (min-width:920px){
+@media only screen and (min-width:768px){
     .nav-toggle {
         display: none;
     }
@@ -258,10 +315,55 @@ h2{
 
     /*Skills*/
     .skills {
-        width: 600px;
-        margin: 40px;
+   
+        margin-block-start: auto;
         font-size: 20px;
+        margin-top: 0;
     }
+
+    .skill {
+        
+        padding: 10px;
+        color: rgb(55, 81, 161);
+        font-weight: bold;
+    }
+
+    /*formulario*/
+
+
+    .form-skill {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 180px;     
+        align-self: start; 
+    }
+
+    .contacto form {
+        display: flex;
+        flex-direction: column
+        ;
+    }
+    .contacto form .full {
+        grid-column: 1 / 3;
+    }
+    
+    .contacto form p {
+        margin: 0;
+    }
+    
+    .title-select{
+        padding-bottom: 20px;
+    }
+    
+    .contacto form button, .contacto form .campos{
+        width: 100%;
+        padding: 1em;
+        
+    }
+    
+    
+    
+   
 
   
 }

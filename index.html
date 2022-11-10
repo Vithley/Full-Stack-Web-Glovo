@@ -45,11 +45,11 @@
         
     </div>
 
-    <h2>Skills</h2>
+    
 
     <section class="form-skill">
         <div class="skills">
-            
+            <h2>Skills</h2>
             <p>Timidez</p>
             <div class="skill-container">
                 <div class="skill timidez">20%</div>
@@ -81,43 +81,62 @@
             </div>
 
         </div>
-        <form>
-            <p>
-                <label for="name" >Nombre</label>
-                <input type="text" required placeholder="Introduzca su nombre"/>
-            </p>
+        <div class="contacto">
+            <h2>¿Alguna duda?</h2>
+            <form>
+                <p>
+                    <label for="name" >Nombre</label>
+                    <input class="campos" type="text" required placeholder="Introduzca su nombre"/>
+                </p>
 
-            <p>
-                <label for="apellido">Apellido</label>
-                <input type="text" required placeholder="Introduzca su apellido"/>
-            </p>
+                <p>
+                    <label for="apellido">Apellido</label>
+                    <input class="campos" type="text" required placeholder="Introduzca su apellido"/>
+                </p>
 
-            <p>
-                <label for="telefono">Teléfono</label>
-                <input type="number" required placeholder="Introduzca su teléfono"/>
-            </p>
+                <p>
+                    <label for="telefono">Teléfono</label>
+                    <input class="campos" type="number" required placeholder="Introduzca su teléfono"/>
+                </p>
 
-            <p>
-                <label for="gitHub">GitHub username</label>
-                <input type="email" required placeholder="Con este formato (@<username>)"/>
-            </p>
-           
-            <p>
-            ¿Cómo me conociste?
-
-            <p><label><input type="radio" name="Universidad" value="Universidad"> Universidad</label></p>
-
-            <p><label><input type="radio" name="Keepcoding kick-off" value="Keepcoding kick-off"> Keepcoding kick-off</label></p>
-
-            <p><label><input type="radio" name="Colegio" value="Colegio"> Colegio</label></p>
+                <p>
+                    <label for="gitHub">GitHub username</label>
+                    <input class="campos" type="email" required placeholder="Con este formato (@<username>)"/>
+                </p>
             
-            <p><label><input type="radio" name="En Github" value="En Github"> En Github</label></p>
+                <p class="">
+                    <p class="title-select">¿Cómo me conociste?</p>
 
-            </p>
+                    <label><input type="radio" name="opcion" value="Universidad"> Universidad</label></p>
 
-            <p><input type="submit" value="Enviar"></p>
+                    <label><input type="radio" name="opcion" value="Keepcoding kick-off"> Keepcoding kick-off</label></p>
 
-        </form>
+                    <label><input type="radio" name="opcion" value="Colegio"> Colegio</label></p>
+                    
+                    <label><input type="radio" name="opcion" value="En Github"> En Github</label></p>
+                </p> 
+                
+                <p class="full campos">
+                    <label for="mensaje">Más información</label></p>
+                    <textarea name="mensaje" required rows="5" placeholder="Que más quieres saber..."></textarea></p>
+                </p>
+                
+                <p class="boton">
+                    <input class="campos" type="submit" value="Enviar">
+                </p>
+
+            </form>
+        </div>
     </section>
+    <footer>
+        <div class="footer">
+            
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            
+          
+        </div>
+      </footer>
 </body>
 </html>
