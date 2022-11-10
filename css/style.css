@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0;max-width: 100%;
 }
 
 body{
@@ -69,13 +69,13 @@ a{
 
 /*Section*/
 
-section img {
+.text img {
     width: 100%;
     object-fit: cover;
     object-position: bottom;
 }
 
-section {
+.text {
     position: relative;
 }
 
@@ -87,7 +87,7 @@ section {
     transform: translate(-50%, -50%);
     font-size: 20px;
     color:#fff;
-    background-color: coral;
+    background-color: rgb(197 26 23);
     
 }
 
@@ -197,6 +197,12 @@ h2{
     100%{width: 70%;}
 }
 
+/*Form*/
+
+.form-skill {
+    
+}
+
 
 @media only screen and (min-width:920px){
     .nav-toggle {
@@ -256,6 +262,8 @@ h2{
         margin: 40px;
         font-size: 20px;
     }
+
+  
 }
 
 

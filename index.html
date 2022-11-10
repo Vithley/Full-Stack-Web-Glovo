@@ -29,7 +29,7 @@
             </nav>
         </div> 
     </div>   
-    <section>
+    <section class="text">
         <img src="img/house.jpeg" alt="">
         <h1 class="text-portfolio">PORTFOLIO HOMER-SIMPSON</h1>
 
@@ -47,39 +47,77 @@
 
     <h2>Skills</h2>
 
+    <section class="form-skill">
+        <div class="skills">
+            
+            <p>Timidez</p>
+            <div class="skill-container">
+                <div class="skill timidez">20%</div>
+            </div>
 
-    <div class="skills">
-        
-        <p>Timidez</p>
-        <div class="skill-container">
-            <div class="skill timidez">20%</div>
+            <p>Torpeza</p>
+            <div class="skill-container">
+                <div class="skill torpeza">80%</div>
+            </div>
+
+            <p>Amigable</p>
+            <div class="skill-container">
+                <div class="skill amigable">60%</div>
+            </div>
+
+            <p>Cariñoso</p>
+            <div class="skill-container">
+                <div class="skill cariñoso">50%</div>
+            </div>
+
+            <p>Mal Humor</p>
+            <div class="skill-container">
+                <div class="skill humor">90%</div>
+            </div>
+
+            <p>Familiar</p>
+            <div class="skill-container">
+                <div class="skill familiar">70%</div>
+            </div>
+
         </div>
+        <form>
+            <p>
+                <label for="name" >Nombre</label>
+                <input type="text" required placeholder="Introduzca su nombre"/>
+            </p>
 
-        <p>Torpeza</p>
-        <div class="skill-container">
-            <div class="skill torpeza">80%</div>
-        </div>
+            <p>
+                <label for="apellido">Apellido</label>
+                <input type="text" required placeholder="Introduzca su apellido"/>
+            </p>
 
-        <p>Amigable</p>
-        <div class="skill-container">
-            <div class="skill amigable">60%</div>
-        </div>
+            <p>
+                <label for="telefono">Teléfono</label>
+                <input type="number" required placeholder="Introduzca su teléfono"/>
+            </p>
 
-        <p>Cariñoso</p>
-        <div class="skill-container">
-            <div class="skill cariñoso">50%</div>
-        </div>
+            <p>
+                <label for="gitHub">GitHub username</label>
+                <input type="email" required placeholder="Con este formato (@<username>)"/>
+            </p>
+           
+            <p>
+            ¿Cómo me conociste?
 
-        <p>Mal Humor</p>
-        <div class="skill-container">
-            <div class="skill humor">90%</div>
-        </div>
+            <p><label><input type="radio" name="Universidad" value="Universidad"> Universidad</label></p>
 
-        <p>Familiar</p>
-        <div class="skill-container">
-            <div class="skill familiar">70%</div>
-        </div>
+            <p><label><input type="radio" name="Keepcoding kick-off" value="Keepcoding kick-off"> Keepcoding kick-off</label></p>
 
-    </div>
+            <p><label><input type="radio" name="Colegio" value="Colegio"> Colegio</label></p>
+            
+            <p><label><input type="radio" name="En Github" value="En Github"> En Github</label></p>
+
+            </p>
+
+            <p><input type="submit" value="Enviar"></p>
+
+        </form>
+    </section>
 </body>
 </html>
