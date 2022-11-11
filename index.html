@@ -101,7 +101,7 @@
 
                 <p>
                     <label for="gitHub">GitHub username</label>
-                    <input class="campos" type="email" required placeholder="Con este formato (@<username>)"/>
+                    <input class="campos" type="text" required pattern="^@[^\s]+" placeholder="Con este formato (@<username>)"/>
                 </p>
             
                 <p class="">
@@ -109,7 +109,7 @@
 
                     <label><input type="radio" name="opcion" value="Universidad"> Universidad</label></p>
 
-                    <label><input type="radio" name="opcion" value="Keepcoding kick-off"> Keepcoding kick-off</label></p>
+                    <label><input type="radio" name="opcion" value="Keepcoding kick-off" checked> Keepcoding kick-off</label></p>
 
                     <label><input type="radio" name="opcion" value="Colegio"> Colegio</label></p>
                     
@@ -118,7 +118,7 @@
                 
                 <p class="full campos">
                     <label for="mensaje">Más información</label></p>
-                    <textarea name="mensaje" required rows="5" placeholder="Que más quieres saber..."></textarea></p>
+                    <textarea name="mensaje" maxlength="180" placeholder="Que más quieres saber..."></textarea></p>
                 </p>
                 
                 <p class="boton">
@@ -134,9 +134,9 @@
         </div>
 
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a> 
+            <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a> 
         </div>
         
         <div class="copy">

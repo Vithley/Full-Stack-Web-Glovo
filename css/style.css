@@ -93,7 +93,7 @@ section{
     transform: translate(-50%, -50%);
     font-size: 20px;
     color:#fff;
-    background-color: rgb(197, 23, 177);
+    background-color: rgb(21, 126, 157);;
     
 }
 
@@ -124,12 +124,9 @@ h2{
     width: 500px;
     margin: auto;
     padding: 10px;
-    font-size: 20px;
+    font-size: 15px;
     color: antiquewhite;
 }
-
-
-
 
 .skill-container {
     width: 100%;
@@ -254,6 +251,7 @@ h2{
 
 textarea {
     width: 100%;
+    height: 150px;
     
 }
 
@@ -286,6 +284,7 @@ footer .copy{
 }
 
 
+/*Estilos para pantallas más grandes de 980px*/
 @media only screen and (min-width:980px){
     .nav-toggle {
         display: none;
@@ -353,7 +352,7 @@ footer .copy{
         font-weight: bold;
     }
 
-    /*formulario*/
+    /*Formulario*/
 
 
     .form-skill {
@@ -390,7 +389,8 @@ footer .copy{
         font-size: 20px;
     }
 
-    /*footer*/
+
+    /*Footer*/
 
     .redes i {
         font-size: 30px;
