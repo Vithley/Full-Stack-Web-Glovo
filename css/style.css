@@ -7,8 +7,8 @@
 
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(103, 138, 169);
-    background-color: antiquewhite;
+    
+    background: rgb(234, 234, 150);
     position: relative;
     padding-bottom: 3em;
     min-height: 100vh;
@@ -72,7 +72,9 @@ a{
 }
 
 /*Section*/
-
+section{
+    background-color: rgb(81, 144, 216);
+}
 .text img {
     width: 100%;
     object-fit: cover;
@@ -91,7 +93,7 @@ a{
     transform: translate(-50%, -50%);
     font-size: 20px;
     color:#fff;
-    background-color: rgb(197 26 23);
+    background-color: rgb(197, 23, 177);
     
 }
 
@@ -102,7 +104,11 @@ h2{
     font-weight: bold;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 20px 30px;
+    
+}
 
+.description h2, .description p{
+    color: rgb(78, 82, 188);
 }
 
 .description p{
@@ -113,12 +119,16 @@ h2{
 }
 
 /*Skills*/
+
 .skills {
     width: 500px;
     margin: auto;
     padding: 10px;
     font-size: 20px;
+    color: antiquewhite;
 }
+
+
 
 
 .skill-container {
@@ -131,7 +141,7 @@ h2{
 .skill {
     text-align: right;
     padding: 10px;
-    color: rgb(55, 81, 161);
+    color: rgb(217, 240, 42);
     font-weight: bold;
 }
 
@@ -209,7 +219,8 @@ h2{
     margin-right: auto;
     padding: 2em;
     font-size: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
+    color: antiquewhite;
 }
 
 .contacto form {
@@ -236,7 +247,7 @@ h2{
 }
 
 .boton input {
-    color: rgb(220, 208, 39);
+    color: rgb(193, 210, 210);
     background-color: blue;
     border-radius: 20px;
 }
@@ -248,20 +259,34 @@ textarea {
 
 /*Footer*/
 
-footer{
-    background-color: blue;
-    padding: 1em 0;
+footer {
+   padding-top: 40px;
+}
+footer .titulo-footer{
+   color: rgb(21, 126, 157);
+   text-align: center;
+
+}
+
+footer .copy{
+    color: rgb(21, 126, 157);
     text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    
-    
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+}
+
+.redes i {
+    font-size: 30px;
+    padding: 20px 20px;
+    color: rgb(21, 126, 157);
+
 }
 
 
-@media only screen and (min-width:768px){
+@media only screen and (min-width:980px){
     .nav-toggle {
         display: none;
     }
@@ -360,6 +385,27 @@ footer{
         padding: 1em;
         
     }
+
+    .boton input {
+        font-size: 20px;
+    }
+
+    /*footer*/
+
+    .redes i {
+        font-size: 30px;
+        padding: 20px 20px;
+    
+    }
+
+    footer .titulo-footer{
+        font-size: 30px;
+     
+     }
+     
+     footer .copy{
+        font-size: 20px;
+     }
     
     
     
