@@ -282,6 +282,33 @@ footer .copy{
 
 }
 
+/*Envío Formulario*/
+
+.envio {
+    color: blue;
+}
+
+.volver {
+    text-decoration: none;
+    text-align: center;
+    padding-top: 3em;
+}
+.volver img {
+    width: 40%;
+    padding-bottom: 5em;
+   
+}
+.envio-form{
+    border-radius: 20px;
+    height: 5em;
+    background: rgb(66, 9, 118);
+    
+}
+.envio-form a{
+    color: rgb(227, 230, 230);
+    font-size: 40px;
+}
+
 
 /*Estilos para pantallas más grandes de 980px*/
 @media only screen and (min-width:980px){
@@ -405,6 +432,12 @@ footer .copy{
      footer .copy{
         font-size: 20px;
      }
+
+     .volver img {
+        width: 15%;
+        padding-bottom: 5em;
+       
+    }
     
     
     
